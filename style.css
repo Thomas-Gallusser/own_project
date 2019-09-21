@@ -83,14 +83,28 @@ footer {
   }
 }
 
-/* ----------------- */
-.bg-b{
-  color:white;
-  background-color:black;
+.container {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-.bg-w{
+
+.container .partl p:hover {
+  background-color:rgba(0,0,0,.8);
+}
+.container .partr p:hover {
+  background-color:rgba(255,255,255,.8);
+}
+
+/* Test pour voir les différentes parties */
+.partl{
+  color:white;
+  border: 1px dashed blue;
+  background-color:rgba(0,0,0,.2);
+}
+.partr{
   color:black;
-  background-color:white;
+  border: 1px dashed red;
+  background-color:rgba(255,255,255,.2);
 }
 .sz{
  height: 100%;
