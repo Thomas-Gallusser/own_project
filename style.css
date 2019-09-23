@@ -11,48 +11,69 @@ body {
 /* ----------------- */
 header {
   flex: none;
+  background-color:#d25c5c;
 }
 
 main {
   flex: auto;
-  background-color:#614E1A;
+  background-color:#d25c5c;
 }
 
 footer {
   flex: none;
   text-align:center;
   font-weight: bold;
-  background-color: #FFC961;
+  background-color:#d25c5c;
+}
+
+footer p{
+  margin-bottom:0px;
+  background-color: #b0e57c;
+  border-top-right-radius: 50px 100px;
+  border-top-left-radius: 50px 100px;
 }
 /* ----------------- */
+@font-face {
+    font-family: 'candy_shop_contour_personalRg';
+    src: url('candy_font-webfont.woff2') format('woff2'),
+         url('candy_font-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.logo span{
+  font-size: 2em;
+  color: #fd4a76;
+  font-family: 'candy_shop_contour_personalRg';
+}
 
 .logo {
-  background-color: #856D4D;
+  background-color: #FFFFFF;
+  padding: 15px;
+  text-align:center;
 }
 .menu{
   text-align: center;
   padding: 20px;
-  background-color: #FFC961;
+  border-bottom-right-radius: 50px 100px;
+  border-bottom-left-radius: 50px 100px;
+  background-color: #ffbaba;
 }
 .menu a {
-  margin: 5px;
-  color: #FFD858;
+  margin: 8px;
+  color: #acc1ff;
   font-weight: bold;
-  background-color: #7E3300;
+  background-color: #ffffff;
   padding: 5px 15px;
   border-radius: 25px;
   text-decoration: none;
   display: inline;
 }
 .menu a:hover, .btn:hover{
-  font-size: 20px;
-  color: #4b2000;
-}
-.img-responsive{
-  margin:10px;
-  width:30px;
-  max-width: 100%;
-  height: auto;
+  margin: 5px;
+  color: #628aff;
+  border: 3px solid #628aff;
 }
 
 /* Reponsive Mobile NavBar */
@@ -89,24 +110,24 @@ footer {
   padding-bottom: 10px;
 }
 
-.container .partl p:hover {
-  background-color:rgba(0,0,0,.8);
-}
-.container .partr p:hover {
-  background-color:rgba(255,255,255,.8);
+.partl, .partr{
+  padding: 20px;
+  font-weight: bold;
+  background-color: rgba(255,255,255,0.1);
 }
 
-/* Test pour voir les différentes parties */
-.partl{
-  color:white;
-  border: 1px dashed blue;
-  background-color:rgba(0,0,0,.2);
+
+/* fonts */
+.fa-adr{
+  font-size: 45px;
+  /* color:#c30000; */
 }
-.partr{
-  color:black;
-  border: 1px dashed red;
-  background-color:rgba(255,255,255,.2);
+.fa-tel{
+  font-size: 45px;
 }
-.sz{
- height: 100%;
+.fa-clock{
+  font-size: 45px;
+}
+.mar p{
+  margin:0px;
 }
