@@ -11,19 +11,19 @@ body {
 /* ----------------- */
 header {
   flex: none;
-  background-color:#d25c5c;
+  background-color:#ff9966;
 }
 
 main {
   flex: auto;
-  background-color:#d25c5c;
+  background-color:#ff9966;
 }
 
 footer {
   flex: none;
   text-align:center;
   font-weight: bold;
-  background-color:#d25c5c;
+  background-color:#ff9966;
 }
 
 footer p{
@@ -60,6 +60,9 @@ footer p{
   border-bottom-left-radius: 50px 100px;
   background-color: #ffbaba;
 }
+.menurow{
+  display:block;
+}
 .menu a {
   margin: 8px;
   color: #acc1ff;
@@ -80,16 +83,13 @@ footer p{
 @media screen and (max-width: 600px) {
   .topnav a{
     display: none;
-    float:right;
-    margin-left:60%;
+    /* margin-left:60%; */
   }
-  .topnav a.icon {
-    display: inline;
-    float:right;
+  .topnav .icon {
+    display: block;
   }
   .menu{
     text-align:right;
-    float:right;
   }
   .topnav.responsive a {
     display:block;
@@ -110,10 +110,19 @@ footer p{
   padding-bottom: 10px;
 }
 
-.partl, .partr{
+.partl{
   padding: 20px;
   font-weight: bold;
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(153,255,255,0.1);
+  border-top-left-radius: 25px 100px;
+  border-bottom-left-radius: 25px 100px;
+}
+.partr{
+  padding: 20px;
+  font-weight: bold;
+  background-color: rgba(153,255,255,0.1);
+  border-top-right-radius: 25px 100px;
+  border-bottom-right-radius: 25px 100px;
 }
 
 
